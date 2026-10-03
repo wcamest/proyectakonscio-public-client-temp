@@ -1,0 +1,9 @@
+.webrtc_espacios_3d_flipbox {
+  height: 700px;
+}
+
+@media (min-width: 768px) {
+  .webrtc_espacios_3d_flipbox {
+    height: unset;
+  }
+}

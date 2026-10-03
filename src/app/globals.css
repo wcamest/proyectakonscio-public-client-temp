@@ -1,0 +1,88 @@
+@import "tailwindcss";
+/* Public Blog rich text: HTML is sanitized server-side before rendering. */
+.public-rich-text {
+  min-width: 0;
+  max-width: 100%;
+  font-size: 1rem;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.public-rich-text *,
+.public-rich-text *::before,
+.public-rich-text *::after {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.public-rich-text p,
+.public-rich-text li,
+.public-rich-text blockquote,
+.public-rich-text h2,
+.public-rich-text h3,
+.public-rich-text a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.public-rich-text > * + * {
+  margin-top: 1rem;
+}
+
+.public-rich-text h2 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: rgb(38 38 38);
+}
+
+.public-rich-text h3 {
+  margin-top: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: rgb(38 38 38);
+}
+
+.public-rich-text ul,
+.public-rich-text ol {
+  padding-left: 1.5rem;
+}
+
+.public-rich-text ul {
+  list-style: disc;
+}
+
+.public-rich-text ol {
+  list-style: decimal;
+}
+
+.public-rich-text li + li {
+  margin-top: 0.35rem;
+}
+
+.public-rich-text blockquote {
+  border-left: 3px solid rgb(147 197 253);
+  padding-left: 1rem;
+  color: rgb(82 82 82);
+}
+
+.public-rich-text a {
+  color: rgb(29 78 216);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.public-rich-text .ql-align-center { text-align: center; }
+.public-rich-text .ql-align-right { text-align: right; }
+.public-rich-text .ql-align-justify { text-align: justify; }
+.public-rich-text .ql-indent-1 { padding-left: min(1.5rem, 12%); }
+.public-rich-text .ql-indent-2 { padding-left: min(3rem, 18%); }
+.public-rich-text .ql-indent-3 { padding-left: min(4.5rem, 24%); }
+.public-rich-text .ql-indent-4 { padding-left: min(6rem, 30%); }
+.public-rich-text .ql-indent-5 { padding-left: min(7.5rem, 36%); }
+.public-rich-text .ql-indent-6 { padding-left: min(9rem, 42%); }
+.public-rich-text .ql-indent-7 { padding-left: min(10.5rem, 48%); }
+.public-rich-text .ql-indent-8 { padding-left: min(12rem, 54%); }

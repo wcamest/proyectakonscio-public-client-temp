@@ -1,0 +1,9 @@
+.carousel_component {
+  height: 700px;
+}
+
+.slide_animation {
+  transition-property: opacity;
+  transition-timing-function: linear;
+  transition-duration: 500ms;
+}

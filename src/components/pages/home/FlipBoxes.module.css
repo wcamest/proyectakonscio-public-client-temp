@@ -1,0 +1,9 @@
+.home_flipbox {
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .home_flipbox {
+    min-height: unset;
+  }
+}
